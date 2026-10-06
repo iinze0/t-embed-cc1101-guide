@@ -1,21 +1,23 @@
 # T-Embed CC1101 and CC1101 Plus — firmware guide
 
-Practical install, multi-firmware, and update notes for both LilyGO boards:
+Install, multi-boot, buying, antennas, and writing your own app for both LilyGO boards:
 
-- **T-Embed CC1101** (original, CC1101 + PN532, no onboard nRF24)
-- **T-Embed CC1101 Plus** (same board family, plus onboard nRF24L01)
+- **T-Embed CC1101** (CC1101 + PN532, no onboard nRF24)
+- **T-Embed CC1101 Plus** (same board, plus onboard nRF24L01)
 
-Everything you need to flash, slot, and update is in this repo: [do it from here](docs/00-from-this-repo.md). What to buy, and every firmware that actually runs here: [buy](docs/08-buy.md) · [antennas](docs/11-antennas.md) · [SD card and extras](docs/10-extras.md) · [firmware index](docs/09-firmware-index.md). Binaries stay on the project that builds them. This repo will not host attack steps.
+Start here: [everything worth knowing](docs/13-need-to-know.md). Then [do the setup](docs/00-from-this-repo.md). Binaries stay on the project that builds them. This repo will not host attack steps.
 
-**[LEGAL.md](LEGAL.md) — read it before the first transmit.** A warning banner does not make someone else's fob, badge, car, gate, or Wi-Fi legal. In Norway that is straffeloven §§ 201–205, and it has already meant prison for unauthorised access alone.
+**[LEGAL.md](LEGAL.md) — read it before the first transmit.** A warning banner does not make someone else's fob, badge, car, gate, or Wi-Fi legal. In Norway that is straffeloven §§ 201–205, and it has already meant prison for unauthorised access alone. The same acts are offences almost everywhere else.
 
 ## Pick a path
 
 | Goal | Do this |
 | --- | --- |
+| The short version of all of it | [Need to know](docs/13-need-to-know.md) |
 | Whole setup, in order | [From this repo](docs/00-from-this-repo.md) |
+| Write your own app and put it in a slot | [Own firmware](docs/12-own-firmware.md) · [starter](examples/hello) |
 | Every firmware and both multi-boot options | [Firmware index](docs/09-firmware-index.md) |
-| Board, antenna, shell, where it is cheapest | [Buy](docs/08-buy.md) |
+| Board, shell, where it is cheapest | [Buy](docs/08-buy.md) |
 | Sub-GHz, Wi-Fi, Bluetooth, and nRF24 whips, each in three sizes | [Antennas](docs/11-antennas.md) |
 | SD card, cable, battery, tags, what to skip | [Extras](docs/10-extras.md) |
 | What the menus are, and what is a crime | [Capabilities and limits](docs/07-capabilities-and-limits.md) |
@@ -40,6 +42,8 @@ Two launchers are worth knowing:
 
 You run one launcher, not both. Flashing the other replaces it. App `.bin` files on the SD card survive if you do not format the card.
 
+Your own PlatformIO app goes in a slot the same way. Use `firmware.bin`, not the factory image. [Own firmware](docs/12-own-firmware.md).
+
 ## 60-second version
 
 1. Charge the board. Use a USB-C **data** cable, not a charge-only lead.
@@ -52,7 +56,7 @@ You run one launcher, not both. Flashing the other replaces it. App `.bin` files
 
 ## Official sources
 
-- Hardware: [Xinyuan-LilyGO/T-Embed-CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
+- Hardware and examples: [Xinyuan-LilyGO/T-Embed-CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
 - Buy: [lilygo.cc Plus](https://lilygo.cc/products/t-embed-cc1101-plus) · [AliExpress official item](https://www.aliexpress.com/item/1005007967599411.html)
 - Antennas: [Sub-GHz, Wi-Fi, Bluetooth, nRF24](docs/11-antennas.md)
 - Extras: [SD card and the rest](docs/10-extras.md)
