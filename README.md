@@ -5,6 +5,8 @@ Install, multi-boot, buying, antennas, and writing your own app for both LilyGO 
 - **T-Embed CC1101** (CC1101 + PN532, no onboard nRF24)
 - **T-Embed CC1101 Plus** (same board, plus onboard nRF24L01)
 
+Website, once Pages is on (`Settings → Pages → main / docs`): [installer and remote](docs/index.html). Source: [docs/index.html](docs/index.html), [install](docs/install.html), [remote](docs/remote.html).
+
 Start here: [everything worth knowing](docs/13-need-to-know.md). Then [do the setup](docs/00-from-this-repo.md). Binaries stay on the project that builds them. This repo will not host attack steps.
 
 **[LEGAL.md](LEGAL.md) — read it before the first transmit.** A warning banner does not make someone else's fob, badge, car, gate, or Wi-Fi legal. In Norway that is straffeloven §§ 201–205, and it has already meant prison for unauthorised access alone. The same acts are offences almost everywhere else.
@@ -13,6 +15,7 @@ Start here: [everything worth knowing](docs/13-need-to-know.md). Then [do the se
 
 | Goal | Do this |
 | --- | --- |
+| Flash from the browser, then drive the wheel from a phone | [Website](docs/index.html) |
 | The short version of all of it | [Need to know](docs/13-need-to-know.md) |
 | Whole setup, in order | [From this repo](docs/00-from-this-repo.md) |
 | Write your own app and put it in a slot | [Own firmware](docs/12-own-firmware.md) · [starter](examples/hello) |
