@@ -1,46 +1,62 @@
-# Antennas, one link each
+# Antennas, by band and by size
 
-The shell kit is the case and the SMA hole. It is not the antenna you want long-term. Buy the shell only if your board is the internal-antenna version. If you already have the external version (K268-01), skip the shell and buy the whip for the band you use.
+Pick the band first, then how big you want it. The shell kit is only the hole. These are the whips.
 
-The jack on the LilyGO external shell is **SMA female**. The whip must be **SMA male**. RP-SMA (the connector on a lot of Wi-Fi routers, pin reversed) will thread on and not connect. IPEX / U.FL is the connector on the board inside the shell. You only need a pigtail if you are not using LilyGO's shell.
+The jack on the LilyGO external shell is **SMA female**. The whip must be **SMA male**. RP-SMA threads on and does not connect. IPEX / U.FL is inside the board; you only need a pigtail if you are not using LilyGO's shell.
 
-A "better" antenna here means a whip cut for one band, 50 ohm, SMA male. A longer matched whip beats the short stub in the kit. Listings that say 10 dBi or 12 dBi on a finger-length rubber duck are lying. Do not buy an amplifier.
+A bigger antenna is better only if it is cut for that band. A 20 cm whip on 868 or 915 is a real step up from the stub. A listing that says 12 dBi on a finger-length duck is marketing. No amplifiers.
 
-One jack, one band. The CC1101 jack takes 433, 868, or 915, and you swap the whip when you change band. The 2.4 GHz jack, if your version has one, is Wi-Fi / BLE or the nRF24 path. Do not put a 2.4 GHz whip on the Sub-GHz jack.
+One jack, one band. CC1101 takes 433, 868, or 915, and you swap the whip when you change band. The 2.4 GHz jack, if the board has one, is Wi-Fi / BLE or nRF24. Do not put a 2.4 GHz whip on the Sub-GHz jack.
 
-## Shell, only if you need the hole
-
-| What | Link |
-| --- | --- |
-| LilyGO shell, official | https://lilygo.cc/products/t-embed-series-shell |
-| Same kit, AliExpress official store | https://www.aliexpress.com/item/1005012301045696.html |
-
-About $11. Transparent or black. Case only on some listings — read the title. If it does not say antenna, it does not include one.
-
-## Sub-GHz, CC1101 jack
-
-Buy the one row that matches where you transmit. A second whip is for a second band, not a spare of the same one.
-
-| Band | Where it is the right one | Link |
+| Size | Length | On this device |
 | --- | --- | --- |
-| 868 MHz | Europe, UK, EEA | [4-pack, pick the 868 MHz variant](https://www.aliexpress.com/item/1005006673760959.html) |
-| 915 MHz | USA, Canada, Australia, New Zealand | [Same listing, pick the 915 MHz variant](https://www.aliexpress.com/item/1005006673760959.html) |
-| 433.92 MHz | Only if you actually use 433 | [Pick the 433 MHz variant](https://www.aliexpress.com/item/1005004730589896.html) |
+| Small | about 4–6 cm | Pocket. Worst range. Fine if the other end is in the same room. |
+| Medium | about 10–12 cm | The one to buy. Fits a bag, close to a quarter wave at 868/915. |
+| Long | about 20–21 cm | Bench and outdoor. Best of the three. Snags a pocket and tips the board on a table. |
 
-Those are SMA-male whips sold for CC1101 / LoRa modules. About $2–8. Search fallback if a listing dies: [868 MHz SMA male](https://www.aliexpress.com/w/wholesale-868mhz-sma-male-antenna.html), [915 MHz SMA male](https://www.aliexpress.com/w/wholesale-915mhz-sma-male-antenna.html), [433 MHz SMA male](https://www.aliexpress.com/w/wholesale-433mhz-sma-male-antenna.html).
+Shell, only if the board is the internal-antenna version: [lilygo.cc](https://lilygo.cc/products/t-embed-series-shell) · [AliExpress kit](https://www.aliexpress.com/item/1005012301045696.html). About $11. Some listings are the case only.
 
-## 2.4 GHz, the other jack
+## 868 MHz — Europe, UK, EEA
 
-Only if the board has a separate 2.4 GHz SMA. Wi-Fi, BLE, and nRF24 are all 2.4 GHz, but they are not the same connector as the CC1101.
+| Size | Get this | Link |
+| --- | --- | --- |
+| Small | Short SMA-male stub, same family as the kit whip | [868 variant, 4-pack](https://www.aliexpress.com/item/1005006673760959.html) |
+| Medium | ~11 cm SMA male | [868 MHz SMA male, 10–12 cm](https://www.aliexpress.com/w/wholesale-868mhz-sma-male-antenna.html) |
+| Long | 20 cm half-wave whip, SMA male | [MTools 20 cm 868](https://shop.mtoolstec.com/product/868mhz-20cm-whip-antenna) · [AliExpress 20 cm 868](https://www.aliexpress.com/w/wholesale-868mhz-20cm-sma-antenna.html) |
 
-| Band | Link |
-| --- | --- |
-| 2.4 GHz SMA male | [Pick the 2.4G variant](https://www.aliexpress.com/item/1005004730589896.html) |
-| Search fallback | [2.4 GHz SMA male antenna](https://www.aliexpress.com/w/wholesale-2.4ghz-sma-male-antenna.html) |
+## 915 MHz — USA, Canada, Australia, New Zealand
+
+| Size | Get this | Link |
+| --- | --- | --- |
+| Small | Short SMA-male stub | [915 variant, 4-pack](https://www.aliexpress.com/item/1005006673760959.html) |
+| Medium | ~11 cm SMA male | [915 MHz SMA male](https://www.aliexpress.com/w/wholesale-915mhz-sma-male-antenna.html) |
+| Long | 20 cm half-wave whip, SMA male | [MTools 20 cm 915](https://shop.mtoolstec.com/product/915mhz-20cm-whip-antenna) · [AliExpress 20 cm 915](https://www.aliexpress.com/w/wholesale-915mhz-20cm-sma-antenna.html) |
+
+A whip sold as "868/915" is a compromise. If you only use one band, buy that band.
+
+## 433.92 MHz — only if you use 433
+
+A quarter wave at 433 is about 17 cm, so "small" is already a compromise.
+
+| Size | Get this | Link |
+| --- | --- | --- |
+| Small | Short rubber SMA male. Pocket, poor match. | [433 variant](https://www.aliexpress.com/item/1005004730589896.html) |
+| Medium | ~17 cm, the right everyday length | [433 MHz 17 cm SMA male](https://www.aliexpress.com/w/wholesale-433mhz-sma-male-antenna.html) |
+| Long | ~21 cm whip | [433 MHz SMA male whip](https://www.aliexpress.com/w/wholesale-433mhz-21cm-sma-antenna.html) |
+
+## 2.4 GHz — the other jack only
+
+Quarter wave is about 3 cm, so small is actually the correct length. Longer is for a desk, not for gain.
+
+| Size | Get this | Link |
+| --- | --- | --- |
+| Small | 3–5 cm stub, SMA male | [2.4G variant](https://www.aliexpress.com/item/1005004730589896.html) |
+| Medium | ~10 cm SMA male. Confirm the listing says SMA male, not RP-SMA. | [2.4 GHz SMA male](https://www.aliexpress.com/item/1005005672147757.html) |
+| Long | Magnetic-base whip on a cable. Desk only. The board does not want a cable in a pocket. | [2.4 GHz SMA male with cable](https://www.aliexpress.com/w/wholesale-2.4ghz-sma-male-antenna.html) |
 
 ## What not to click
 
-- A whip labelled 868/915 as if one length covers both well. It is a compromise. Buy the band you use.
-- RP-SMA, unless the listing is a pigtail you have checked against the jack.
-- "12 dBi" panel antennas and magnetic car mounts. Too big for the shell, and the gain number is marketing.
+- RP-SMA, unless you have checked the jack.
+- "12 dBi" panel antennas and car mounts as a daily carry.
+- One whip for every band.
 - Anything sold as a jammer antenna or a power amplifier.
