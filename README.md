@@ -5,7 +5,7 @@ Practical install, multi-firmware, and update notes for both LilyGO boards:
 - **T-Embed CC1101** (original, CC1101 + PN532, no onboard nRF24)
 - **T-Embed CC1101 Plus** (same board family, plus onboard nRF24L01)
 
-Everything you need to flash, slot, and update is in this repo: [do it from here](docs/00-from-this-repo.md). What to buy, and every firmware that actually runs here: [buy](docs/08-buy.md) · [firmware index](docs/09-firmware-index.md). Binaries stay on the project that builds them. This repo will not host attack steps.
+Everything you need to flash, slot, and update is in this repo: [do it from here](docs/00-from-this-repo.md). What to buy, and every firmware that actually runs here: [buy](docs/08-buy.md) · [SD card and extras](docs/10-extras.md) · [firmware index](docs/09-firmware-index.md). Binaries stay on the project that builds them. This repo will not host attack steps.
 
 **[LEGAL.md](LEGAL.md) — read it before the first transmit.** A warning banner does not make someone else's fob, badge, car, gate, or Wi-Fi legal. In Norway that is straffeloven §§ 201–205, and it has already meant prison for unauthorised access alone.
 
@@ -16,6 +16,7 @@ Everything you need to flash, slot, and update is in this repo: [do it from here
 | Whole setup, in order | [From this repo](docs/00-from-this-repo.md) |
 | Every firmware and both multi-boot options | [Firmware index](docs/09-firmware-index.md) |
 | Board, antenna, shell, where it is cheapest | [Buy](docs/08-buy.md) |
+| SD card, cable, battery, tags, what to skip | [Extras](docs/10-extras.md) |
 | What the menus are, and what is a crime | [Capabilities and limits](docs/07-capabilities-and-limits.md) |
 | One firmware, simplest | [Single firmware](docs/03-single-firmware.md) |
 | Bruce + Flipper port + anything else, switch without a PC | [Multi-firmware](docs/04-multi-firmware.md) |
@@ -52,6 +53,7 @@ You run one launcher, not both. Flashing the other replaces it. App `.bin` files
 
 - Hardware: [Xinyuan-LilyGO/T-Embed-CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
 - Buy: [lilygo.cc Plus](https://lilygo.cc/products/t-embed-cc1101-plus) · [AliExpress official item](https://www.aliexpress.com/item/1005007967599411.html)
+- Extras: [SD card and the rest](docs/10-extras.md)
 - Bruce: [BruceDevices/firmware](https://github.com/BruceDevices/firmware) · web flasher on [bruce.computer](https://bruce.computer/)
 - Launcher (bmorcelli): [github.com/bmorcelli/Launcher](https://github.com/bmorcelli/Launcher) · [web tools](https://bmorcelli.github.io/Launcher/)
 - Dual-boot launcher (loznoc): [github.com/loznoc/dualboot](https://github.com/loznoc/dualboot) · [web flasher](https://loznoc.github.io/dualboot/)
