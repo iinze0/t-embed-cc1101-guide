@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install — T-Embed</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="bar">
+<a class="mark" href="index.html">T-Embed</a>
+<nav>
+<a href="install.html" aria-current="page">Install</a>
+<a href="remote.html">Remote</a>
+<a href="13-need-to-know.md">Guide</a>
+</nav>
+</header>
+<main>
+<p class="kicker">Web flash</p>
+<h1>Install from this page's flashers.</h1>
+<p class="lead">Desktop Chrome or Edge. USB-C data cable. Click the encoder if the screen is dark. The board enters download mode on its own. Pick Plus only when the flasher has a Plus row; otherwise the CC1101 build is the one both boards take, and nRF24 needs the Plus asset when a project ships one.</p>
+<ol class="steps">
+<li>Charge the board. FAT32 card, 16 or 32 GB, if you want slots.</li>
+<li>Flash one launcher. Not both. The second erase replaces the first.</li>
+<li>Flash Bruce alone only if you do not want to switch apps.</li>
+<li>Copy other .bin files to the card and install them into slots on the device.</li>
+</ol>
+<section class="list">
+<article>
+<h2>loznoc dual-boot</h2>
+<p>Three named slots, themes, the remote on the next page. Does not include Bruce.</p>
+<a class="go" href="https://loznoc.github.io/dualboot/">Open flasher</a>
+</article>
+<article>
+<h2>bmorcelli Launcher</h2>
+<p>Catalog and OTA. Pick LilyGO T-Embed CC1101. WebUI remote after it boots.</p>
+<a class="go" href="https://bmorcelli.github.io/Launcher/">Open flasher</a>
+</article>
+<article>
+<h2>Bruce</h2>
+<p>Single firmware, or the .bin from releases into a slot. CC1101 asset, Plus asset if listed.</p>
+<a class="go" href="https://bruce.computer/">Open flasher</a>
+<a class="ghost" href="https://github.com/BruceDevices/firmware/releases">Releases</a>
+</article>
+<article>
+<h2>Willy V3</h2>
+<p>Separate Plus build. nRF24 only on that one. Install the .bin into a slot, or flash it alone.</p>
+<a class="go" href="https://github.com/h-RAT/Willy_Firmware_V3_T-Embed_CC1101/releases">Releases</a>
+</article>
+<article>
+<h2>Flipper-style port</h2>
+<p>The .bin plus that project's sdcard pack unpacked on the card. Without the pack the UI is empty.</p>
+<a class="go" href="https://github.com/search?q=sor3nt+esp32+flipper&type=repositories">Find the port</a>
+</article>
+<article>
+<h2>Factory demo</h2>
+<p>Known-good image if a third-party flash leaves a black screen.</p>
+<a class="go" href="https://github.com/Xinyuan-LilyGO/T-Embed-CC1101">LilyGO repo</a>
+</article>
+</section>
+<p class="note">A slot install does not happen in the browser. The launcher writes the file from the card. Full order: <a href="00-from-this-repo.md">from this repo</a>.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Remote — T-Embed</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="bar">
+<a class="mark" href="index.html">T-Embed</a>
+<nav>
+<a href="install.html">Install</a>
+<a href="remote.html" aria-current="page">Remote</a>
+<a href="13-need-to-know.md">Guide</a>
+</nav>
+</header>
+<main>
+<p class="kicker">Your launcher, your phone</p>
+<h1>Remote control is a page the board serves.</h1>
+<p class="lead">This site cannot drive the encoder from the public internet. The launcher on the device opens a Wi-Fi page. Your phone joins that network, or the same LAN, and that page mirrors the 320×170 screen and injects the wheel and the side button. Flash the launcher first.</p>
+<section class="split">
+<div>
+<h2>loznoc dual-boot</h2>
+<ol class="steps">
+<li>Boot into the launcher. Open <strong>WiFi</strong>.</li>
+<li>First run is a hotspot. The screen shows the name <code>T-Embed-XXXX</code>, password <code>dualboot</code>, and <code>http://192.168.4.1</code>.</li>
+<li>Join it from the phone. Open that address. PIN first if you set one. The lock screen is not exposed on the network.</li>
+<li><strong>SCREEN</strong> is the framebuffer. <strong>REMOTE</strong> is left, right, ok, and back — the same events as the wheel and the side button.</li>
+<li>To stay on your normal Wi-Fi, put that network in the NETWORK panel. It then answers at <code>http://tembed.local</code> as well as its address. Tick start-on-boot if you want it after reset.</li>
+<li>A .bin upload lands on the card. Install it on the device after. BACK leaves Wi-Fi up. Press turns Wi-Fi off.</li>
+</ol>
+<p><a class="go" href="http://192.168.4.1">Open 192.168.4.1</a> <a class="ghost" href="http://tembed.local">Open tembed.local</a></p>
+<p class="fine">Those open only if this phone is already on the launcher's network. Otherwise the browser will time out. That is expected.</p>
+</div>
+<div class="pad">
+<p class="kicker">On-device remote</p>
+<div class="wheel">
+<span>left</span>
+<strong>ok</strong>
+<span>right</span>
+</div>
+<p class="fine">Side button is back. The live mirror is RGB565, up to 320×170, with a quality switch.</p>
+</div>
+</section>
+<h2>If you script it</h2>
+<p>Same phone, same network, the launcher's own HTTP. Not a public API.</p>
+<ul class="endpoints">
+<li><code>GET /fb?s=1..4</code> — raw RGB565, width and height in headers</li>
+<li><code>GET /key?k=left|right|ok|back</code></li>
+<li><code>GET /cm?cmnd=nav prev|next|sel|esc</code> — same names as Bruce's WebUI</li>
+<li><code>POST /bin</code> — firmware onto the card</li>
+<li><code>POST /theme</code> — theme pack</li>
+</ul>
+<h2>bmorcelli Launcher</h2>
+<p>Main menu → <strong>WUI</strong>. Same idea: a page on the device for files and control, plus the catalog under <strong>OTA</strong>. The flasher is on the <a href="install.html">install page</a>.</p>
+<p class="note">Remote means your board. It is not a way onto someone else's launcher, and the endpoints are not a pentest tool. <a href="../LEGAL.md">LEGAL.md</a>.</p>
+</main>
+</body>
+</html>
