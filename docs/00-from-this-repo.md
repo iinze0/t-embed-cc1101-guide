@@ -1,10 +1,10 @@
 # Do the whole setup from this repo
 
-You do not need a second guide. Firmware binaries stay on the project that builds them (license and size). This page is the order of operations.
+You do not need a second guide. Firmware binaries stay on the project that builds them (license and size). This page is the order of operations. Shops and antenna bands are worldwide: [buy](08-buy.md).
 
 ## 0. Read [LEGAL.md](../LEGAL.md)
 
-If the thing you want to open, copy, or knock off the air is not yours, stop. The rest of this page is install only.
+If the thing you want to open, copy, or knock off the air is not yours, stop. The rest of this page is install only. The penalty section is written against Norwegian law as a concrete example. The same acts are offences almost everywhere else (CFAA, Computer Misuse Act, and the local equivalent).
 
 ## 1. Identify the board
 
@@ -12,7 +12,7 @@ If the thing you want to open, copy, or knock off the air is not yours, stop. Th
 
 ## 2. Card
 
-[SD card](02-sd-card.md). FAT32, 8–32 GB, inserted before first launcher boot.
+[SD card](02-sd-card.md). FAT32, 8–32 GB, inserted before first launcher boot. What to buy is on [extras](10-extras.md).
 
 ## 3. Pick one install
 
@@ -38,7 +38,7 @@ Suggested slots: 1 Bruce, 2 Flipper port, 3 spare. Name the slot with the versio
 
 ## 5. First boot of an app
 
-Set Sub-GHz to 868 or 433.92 before any transmit. 915 is the wrong plan in Norway. Confirm the encoder works in the launcher before you blame the app.
+Set Sub-GHz to the band that is legal where you are before any transmit. 868 or 433.92 on the European plan, 915 in the US, Canada, Australia, and New Zealand. The whip has to match. Confirm the encoder works in the launcher before you blame the app.
 
 ## 6. Later
 
