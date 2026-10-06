@@ -16,7 +16,7 @@ Everything you need to flash, slot, and update is in this repo: [do it from here
 | Whole setup, in order | [From this repo](docs/00-from-this-repo.md) |
 | Every firmware and both multi-boot options | [Firmware index](docs/09-firmware-index.md) |
 | Board, antenna, shell, where it is cheapest | [Buy](docs/08-buy.md) |
-| 433, 868, 915, and 2.4 GHz whips, each with a link | [Antennas](docs/11-antennas.md) |
+| Sub-GHz, Wi-Fi, Bluetooth, and nRF24 whips, each in three sizes | [Antennas](docs/11-antennas.md) |
 | SD card, cable, battery, tags, what to skip | [Extras](docs/10-extras.md) |
 | What the menus are, and what is a crime | [Capabilities and limits](docs/07-capabilities-and-limits.md) |
 | One firmware, simplest | [Single firmware](docs/03-single-firmware.md) |
@@ -54,7 +54,7 @@ You run one launcher, not both. Flashing the other replaces it. App `.bin` files
 
 - Hardware: [Xinyuan-LilyGO/T-Embed-CC1101](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
 - Buy: [lilygo.cc Plus](https://lilygo.cc/products/t-embed-cc1101-plus) · [AliExpress official item](https://www.aliexpress.com/item/1005007967599411.html)
-- Antennas: [one link per band](docs/11-antennas.md)
+- Antennas: [Sub-GHz, Wi-Fi, Bluetooth, nRF24](docs/11-antennas.md)
 - Extras: [SD card and the rest](docs/10-extras.md)
 - Bruce: [BruceDevices/firmware](https://github.com/BruceDevices/firmware) · web flasher on [bruce.computer](https://bruce.computer/)
 - Launcher (bmorcelli): [github.com/bmorcelli/Launcher](https://github.com/bmorcelli/Launcher) · [web tools](https://bmorcelli.github.io/Launcher/)
