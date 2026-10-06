@@ -5,20 +5,23 @@ Practical install, multi-firmware, and update notes for both LilyGO boards:
 - **T-Embed CC1101** (original, CC1101 + PN532, no onboard nRF24)
 - **T-Embed CC1101 Plus** (same board family, plus onboard nRF24L01)
 
-This repo does not ship firmware binaries. It points at the official flashers and explains how the pieces fit together so you are not reflashing from scratch every time you want a different app.
+Everything you need to flash, slot, and update is in this repo: [do it from here](docs/00-from-this-repo.md). Binaries stay on the project that builds them. This repo will not host attack steps.
 
-Use this only on hardware you own, on systems you are allowed to test, and inside the radio rules where you are. In Norway / the EEA that means sticking to legal ISM use (commonly 433.92 MHz and 868 MHz for Sub-GHz, 13.56 MHz NFC on your own tags, IR on your own remotes). Do not jam, do not touch networks or tags you do not own.
+**[LEGAL.md](LEGAL.md) — read it before the first transmit.** A warning banner does not make someone else's fob, badge, car, gate, or Wi-Fi legal. In Norway that is straffeloven §§ 201–205, and it has already meant prison for unauthorised access alone.
 
 ## Pick a path
 
 | Goal | Do this |
 | --- | --- |
+| Whole setup, in order | [From this repo](docs/00-from-this-repo.md) |
+| What the menus are, and what is a crime | [Capabilities and limits](docs/07-capabilities-and-limits.md) |
 | One firmware, simplest | [Single firmware](docs/03-single-firmware.md) |
 | Bruce + Flipper port + anything else, switch without a PC | [Multi-firmware](docs/04-multi-firmware.md) |
 | Which board you actually have | [Hardware](docs/01-hardware.md) |
 | SD card, USB disk mode, file layout | [SD card](docs/02-sd-card.md) |
 | Update launcher or a slot without wiping the other | [Updates](docs/05-updates.md) |
 | Black screen, no port, settings vanish, wrong radio | [Troubleshooting](docs/06-troubleshooting.md) |
+| Penalties | [LEGAL.md](LEGAL.md) |
 
 ## What “multiple firmware” means here
 
