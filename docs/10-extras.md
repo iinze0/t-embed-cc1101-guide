@@ -56,3 +56,9 @@ Mains power is whatever USB charger you already use. The board is USB-C. No regi
 - Screen protectors cut for a phone. The window is a small clear panel; a film usually just traps dust in the shell.
 
 Board and antenna sources stay on the [buy page](08-buy.md).
+
+## Software extras
+
+Themes, the Bruce App Store, JavaScript scripts, the Flipper-port sdcard pack, and signal/IR libraries live on the card. Full list and install steps: [software extras](14-software-extras.md).
+
+Menu maps for finding features in each firmware: [finding features](15-finding-features.md).

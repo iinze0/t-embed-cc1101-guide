@@ -24,6 +24,9 @@ Set the band before you transmit. 868 or 433.92 on the European plan, 915 in the
 
 One launcher, then apps in slots. bmorcelli if you want the catalog. loznoc if you want three named slots on this screen. Bruce in slot 1, Flipper port in slot 2 (needs its sdcard pack), spare in slot 3. [Index](09-firmware-index.md).
 
+Software extras (themes, apps, libraries): [software extras](14-software-extras.md).  
+Where to find menus and common tasks: [finding features](15-finding-features.md).
+
 Reboot returns to the launcher. If it does not, the app was flashed over the launcher. [Updates](05-updates.md).
 
 ## Your own app

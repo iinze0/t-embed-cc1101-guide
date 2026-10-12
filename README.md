@@ -63,6 +63,8 @@ Your own PlatformIO app goes in a slot the same way. Use `firmware.bin`, not the
 - Buy: [lilygo.cc Plus](https://lilygo.cc/products/t-embed-cc1101-plus) · [AliExpress official item](https://www.aliexpress.com/item/1005007967599411.html)
 - Antennas: [Sub-GHz, Wi-Fi, Bluetooth, nRF24](docs/11-antennas.md)
 - Extras: [SD card and the rest](docs/10-extras.md)
+- Software extras: [Themes, apps, libraries, Flipper pack](docs/14-software-extras.md)
+- Finding features: [Menu maps for all firmwares](docs/15-finding-features.md)
 - Bruce: [BruceDevices/firmware](https://github.com/BruceDevices/firmware) · web flasher on [bruce.computer](https://bruce.computer/)
 - Launcher (bmorcelli): [github.com/bmorcelli/Launcher](https://github.com/bmorcelli/Launcher) · [web tools](https://bmorcelli.github.io/Launcher/)
 - Dual-boot launcher (loznoc): [github.com/loznoc/dualboot](https://github.com/loznoc/dualboot) · [web flasher](https://loznoc.github.io/dualboot/)
