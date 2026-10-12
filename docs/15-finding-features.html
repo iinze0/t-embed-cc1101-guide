@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Finding features — T-Embed</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="bar">
+<a class="mark" href="index.html">T-Embed</a>
+<nav>
+<a href="install.html">Install</a>
+<a href="remote.html">Remote</a>
+<a href="15-finding-features.html" aria-current="page">Find</a>
+</nav>
+</header>
+<main>
+<p class="kicker">Menus</p>
+<h1>How to find anything on the firmwares.</h1>
+<p class="lead">Menu names change between versions. This is the usual layout on a T-Embed CC1101 Plus. When a name differs, look in the same group (radio, storage, settings).</p>
+
+<h2>Bmorcelli Launcher</h2>
+<table>
+<thead><tr><th>Want</th><th>Where</th></tr></thead>
+<tbody>
+<tr><td>Install a <code>.bin</code> from the card</td><td>SD menu</td></tr>
+<tr><td>Install from the online catalog</td><td>OTA</td></tr>
+<tr><td>Web interface (files, control, OTA)</td><td>WUI</td></tr>
+<tr><td>USB disk mode</td><td>USB (when available)</td></tr>
+<tr><td>Partition / slot tools</td><td>PMan</td></tr>
+<tr><td>Themes, boot behaviour, shortcuts</td><td>CFG</td></tr>
+<tr><td>Fast-boot an installed app</td><td>Boot screen (press a number or tap the card)</td></tr>
+</tbody>
+</table>
+<p>Normal reset returns to the launcher.</p>
+
+<h2>Bruce</h2>
+<table>
+<thead><tr><th>Want</th><th>Menu group</th><th>Typical items</th></tr></thead>
+<tbody>
+<tr><td>Wi-Fi tools</td><td>Wi-Fi</td><td>Scan, deauth (own network only), portal, sniffer</td></tr>
+<tr><td>Bluetooth</td><td>BLE</td><td>Scan, spam, beacon</td></tr>
+<tr><td>Sub-GHz (CC1101)</td><td>RF / Sub-GHz</td><td>Read, record RAW, replay, spectrum, custom <code>.sub</code></td></tr>
+<tr><td>nRF24 (Plus only)</td><td>NRF</td><td>Spectrum, raw, jammer (own devices)</td></tr>
+<tr><td>NFC / RFID</td><td>RFID</td><td>Read, emulate, dump</td></tr>
+<tr><td>Infrared</td><td>IR</td><td>Read, replay, TV-B-Gone, databases</td></tr>
+<tr><td>Files and captures</td><td>Files</td><td>Browser, copy, delete</td></tr>
+<tr><td>JavaScript</td><td>Interpreter</td><td>Run scripts, App Store</td></tr>
+<tr><td>BadUSB</td><td>Others or BadUSB</td><td>Keyboard scripts</td></tr>
+<tr><td>Settings, themes, LEDs</td><td>Config</td><td>UI Theme, colours, startup app, Wi-Fi credentials</td></tr>
+</tbody>
+</table>
+
+<h2>Flipper-style port (Sor3nt)</h2>
+<table>
+<thead><tr><th>Want</th><th>Where</th></tr></thead>
+<tbody>
+<tr><td>Sub-GHz</td><td>Sub-GHz app</td></tr>
+<tr><td>NFC</td><td>NFC app</td></tr>
+<tr><td>Infrared</td><td>Infrared app</td></tr>
+<tr><td>BadUSB</td><td>Bad USB</td></tr>
+<tr><td>File browser / captures</td><td>Archive</td></tr>
+<tr><td>Games and extra apps</td><td>Apps</td></tr>
+<tr><td>Wi-Fi tools</td><td>Wi-Fi app</td></tr>
+<tr><td>Settings, update, interface</td><td>Settings</td></tr>
+<tr><td>Firmware update</td><td>Settings → Update Firmware or qT-Embed</td></tr>
+</tbody>
+</table>
+<p>The Archive app is the place to browse saved files. Without the <code>sdcard.zip</code> contents most apps stay empty.</p>
+
+<h2>Common tasks</h2>
+<table>
+<thead><tr><th>Task</th><th>Bruce</th><th>Flipper port</th></tr></thead>
+<tbody>
+<tr><td>Capture a Sub-GHz remote</td><td>RF → Read / Record RAW</td><td>Sub-GHz → Read</td></tr>
+<tr><td>Read an NFC tag</td><td>RFID</td><td>NFC</td></tr>
+<tr><td>Learn an IR remote</td><td>IR → Read</td><td>Infrared</td></tr>
+<tr><td>Run a BadUSB script</td><td>Others / BadUSB</td><td>Bad USB</td></tr>
+<tr><td>Change the look</td><td>Config → UI Theme</td><td>Settings → Interface / Dolphin</td></tr>
+<tr><td>Copy files to the card</td><td>Files, WebUI, or USB disk</td><td>Archive, Web filesystem, or USB storage</td></tr>
+</tbody>
+</table>
+
+<h2>When you cannot find it</h2>
+<ol>
+<li>Check you are on the Plus binary if you are looking for nRF24.</li>
+<li>Confirm the SD card is mounted.</li>
+<li>Reboot after copying large packs.</li>
+<li>Look in Config / Settings for optional items.</li>
+<li>Check the project’s GitHub releases and Discord for version-specific changes.</li>
+</ol>
+<p class="note">Menu maps go out of date. The groups stay stable even when individual labels move.</p>
+</main>
+</body>
+</html>

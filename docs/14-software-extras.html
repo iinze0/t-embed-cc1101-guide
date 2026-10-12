@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software extras — T-Embed</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="bar">
+<a class="mark" href="index.html">T-Embed</a>
+<nav>
+<a href="install.html">Install</a>
+<a href="remote.html">Remote</a>
+<a href="14-software-extras.html" aria-current="page">Extras</a>
+</nav>
+</header>
+<main>
+<p class="kicker">Software</p>
+<h1>Themes, apps, libraries, and SD packs.</h1>
+<p class="lead">Hardware extras are on the extras page. This is the software side for Bruce and the Flipper-style port. Everything lives on the FAT32 card.</p>
+
+<h2>Bruce</h2>
+<h3>Themes</h3>
+<p>Themes change icons, colours, borders, labels, LED effects, and the boot animation.</p>
+<ul>
+<li>Place the theme folder (the <code>.json</code> plus its images) in <code>/Themes/</code> on the SD card or in LittleFS.</li>
+<li>Apply: <strong>Config → UI Theme</strong> → choose the filesystem → select the <code>.json</code>.</li>
+<li>Recommended image height for the T-Embed screen is about 140 px. Keep images small.</li>
+<li>Boot GIF and sound can be set in the same <code>.json</code>.</li>
+</ul>
+<p>Community sources:</p>
+<ul>
+<li><a href="https://github.com/anonimoKali/Bruce-Themes">anonimoKali/Bruce-Themes</a> — many T-Embed-optimised packs</li>
+<li><a href="https://github.com/Ghoststrats/GhostStrats-Bruce-Themes">Ghoststrats/GhostStrats-Bruce-Themes</a></li>
+</ul>
+
+<h3>Apps and JavaScript scripts</h3>
+<ul>
+<li>Install the App Store once: <strong>Config → Install App Store</strong> (needs Wi-Fi).</li>
+<li>Then open it from <strong>JS Interpreter → Tools → App Store</strong>.</li>
+<li>Manual install: put <code>.js</code> files in <code>/BruceJS/&lt;Category&gt;/</code>.</li>
+</ul>
+<p>Only run scripts whose source you can read.</p>
+
+<h3>Libraries and captures</h3>
+<ul>
+<li>IR databases</li>
+<li>Sub-GHz <code>.sub</code> signal libraries</li>
+<li>BadUSB / Ducky scripts</li>
+<li>Evil-portal HTML templates</li>
+</ul>
+
+<h2>Flipper-style port (Sor3nt)</h2>
+<p>The <code>.bin</code> alone boots an empty interface. You need the matching asset pack.</p>
+<ol>
+<li>Download the latest <code>sdcard.zip</code> from the project releases.</li>
+<li>Extract <strong>the contents</strong> (not the zip folder itself) to the <strong>root</strong> of a FAT32 card.</li>
+<li>Insert the card and reboot.</li>
+</ol>
+<p>Extra things you can add:</p>
+<ul>
+<li>More BadUSB scripts in <code>/ext/badusb/</code></li>
+<li>Custom dolphin animations</li>
+<li>Your own captured files (Archive organises them)</li>
+</ul>
+<p>Desktop companion: <a href="https://github.com/Sor3nt/qT-Embed">qT-Embed</a></p>
+
+<h2>Community packs (UberGuidoZ and similar)</h2>
+<p>Large Flipper Zero community repositories contain BadUSB scripts, Sub-GHz <code>.sub</code> files, IR codes, and more. Most of the useful files work on the T-Embed.</p>
+<p><strong>Main source:</strong> <a href="https://github.com/UberGuidoZ/Flipper">UberGuidoZ/Flipper</a></p>
+
+<table>
+<thead><tr><th>Content</th><th>Flipper port</th><th>Bruce</th><th>Where to put it</th></tr></thead>
+<tbody>
+<tr><td>BadUSB / Ducky scripts (<code>.txt</code>)</td><td>Yes</td><td>Yes</td><td>Flipper: <code>/ext/badusb/</code> · Bruce: BadUSB folder or Files</td></tr>
+<tr><td>Sub-GHz <code>.sub</code> files</td><td>Yes (most raw)</td><td>Yes</td><td>Any folder; open from Sub-GHz / RF menu</td></tr>
+<tr><td>IR files</td><td>Often</td><td>Often</td><td>Try infrared folder or open via Archive / Files</td></tr>
+<tr><td>Official Flipper <code>.fap</code> apps</td><td>No</td><td>No</td><td>ARM apps do not run on ESP32</td></tr>
+<tr><td>NFC dumps</td><td>Limited</td><td>Limited</td><td>Format support differs</td></tr>
+</tbody>
+</table>
+
+<p>How to add them:</p>
+<ol>
+<li>Download the folders or files you want.</li>
+<li>Copy to the SD card (BadUSB → <code>/ext/badusb/</code>, <code>.sub</code> files → any folder).</li>
+<li>Reboot and open the matching app.</li>
+</ol>
+<p>Other useful collections: large Sub-GHz databases, official IRDB.</p>
+<p class="note">Only use signals and scripts on devices, remotes, tags, and networks you own or have permission to test.</p>
+
+<p class="note">Legal reminder: own tags, own remotes, own networks. See <a href="../LEGAL.md">LEGAL.md</a>.</p>
+</main>
+</body>
+</html>
