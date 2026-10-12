@@ -57,6 +57,36 @@ Extra things you can add yourself:
 
 Desktop companion: [qT-Embed](https://github.com/Sor3nt/qT-Embed) for remote screen, SD management, and updates.
 
+## Community packs (UberGuidoZ and similar)
+
+Large Flipper Zero community repositories contain BadUSB scripts, Sub-GHz `.sub` files, IR codes, and more. Most of the useful files work on the T-Embed.
+
+**Main source:** [UberGuidoZ/Flipper](https://github.com/UberGuidoZ/Flipper)
+
+### What works
+
+| Content | Flipper port | Bruce | Where to put it |
+| --- | --- | --- | --- |
+| BadUSB / Ducky scripts (`.txt`) | Yes | Yes | Flipper: `/ext/badusb/` · Bruce: BadUSB folder or Files |
+| Sub-GHz `.sub` files | Yes (most raw) | Yes | Any folder; open from Sub-GHz / RF menu |
+| IR files | Often | Often | Try infrared folder or open via Archive / Files |
+| Official Flipper `.fap` apps | No | No | ARM apps do not run on ESP32 |
+| NFC dumps | Limited | Limited | Format support differs |
+
+### How to add them
+1. Download the folders or files you want from the repo (or a mirror).
+2. Copy to the SD card:
+   - BadUSB scripts → `/ext/badusb/` (Flipper port) or the BadUSB location Bruce uses
+   - `.sub` files → any folder (Archive / Files will see them)
+3. Reboot.
+4. Open the matching app (Bad USB, Sub-GHz, Archive, Infrared, RF).
+
+Other useful collections:
+- Large Sub-GHz databases (search “FlipperZero-Subghz-DB”)
+- Official IRDB for infrared codes
+
+Only use signals and scripts on devices, remotes, tags, and networks you own or have permission to test.
+
 ## Shared / both firmwares
 
 | What | Where it helps | How |
@@ -72,6 +102,7 @@ Desktop companion: [qT-Embed](https://github.com/Sor3nt/qT-Embed) for remote scr
 - **App Store (Bruce)**: Wi-Fi → Config → Install App Store → JS Interpreter → Tools
 - **Flipper SD pack**: download `sdcard.zip` → extract to card root → insert → reboot
 - **Signal / IR libraries**: drop into the folders the firmware already looks in (Archive, Files, or the specific radio menu)
+- **Community packs**: download from UberGuidoZ/Flipper → copy BadUSB / `.sub` / IR to the card → reboot
 
 Reboot after large copies. Some menus only rescan the card on boot.
 
