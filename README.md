@@ -7,6 +7,7 @@ Install, multi-boot, buying, antennas, and writing your own app for both LilyGO 
 
 **Live site:** https://iinze0.github.io/
 
+- [T-Embed guide home](https://iinze0.github.io/tembed/) 
 - [Install](https://iinze0.github.io/install.html) — web flashers for launcher, Bruce, Willy
 - [Remote](https://iinze0.github.io/remote.html) — screen mirror and control for each firmware
 - [Guide](https://iinze0.github.io/guide.html) — full index of everything
