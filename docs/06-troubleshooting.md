@@ -40,18 +40,8 @@ Partition table has no LittleFS region. See the pre-1.1 fix in [updates](05-upda
 
 ## nRF24 missing
 
-Expected on the original CC1101. On Plus, you flashed a build that was not compiled with the Plus nRF24 pins. Willy and Bruce both need the Plus target for that radio.
+You are on the non-Plus binary, or the board is the original (no onboard nRF24). See [hardware](01-hardware.md).
 
-## NFC reads nothing
+## Flipper port looks empty
 
-PN532 is 13.56 MHz ISO14443. It will not read ISO15693 (some toys, some access cards) and it will not read 125 kHz. Hold the tag flat on the NFC area, not on the antenna end.
-
-## Card not detected
-
-- exFAT. Reformat FAT32.
-- Card half-clicked. Reseat it.
-- USB disk mode still mounted on the PC. Eject, then leave USB mode on the device.
-
-## Encoder reversed or side button dead in one app only
-
-That app’s board header is wrong. Not a hardware fault if the launcher encoder works. Use the other build.
+You forgot the matching `sdcard` pack. Unpack it to the card root and reboot.
