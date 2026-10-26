@@ -1,8 +1,6 @@
-# Everything else worth knowing
+# Need to know
 
-Short version of the rest of the repo, in the order you actually hit it.
-
-**Live site:** https://iinze0.github.io/ — [Install](https://iinze0.github.io/install.html) · [Remote](https://iinze0.github.io/remote.html) · [Guide](https://iinze0.github.io/guide.html)
+Short version of everything that matters on day one.
 
 ## The board
 
@@ -20,7 +18,7 @@ FAT32, 16 or 32 GB, a real brand, bought locally. The slot is SPI. A fast camera
 
 CC1101 is Sub-GHz, not LoRa. Wi-Fi and Bluetooth share the ESP32 antenna. nRF24 is Plus-only and its own radio. SMA male into the shell's SMA female. RP-SMA does not connect. Band and size picks: [antennas](11-antennas.md). Regional bands: [frequencies](16-frequencies.md).
 
-Set the band before you transmit. 868 or 433.92 on the European plan, 915 in the US, Canada, Australia, New Zealand.
+Set the band before you transmit. Match your country.
 
 ## Firmware
 
@@ -41,4 +39,4 @@ Black screen: wrong board target, or a raw app written at `0x0`. No port: cable 
 
 ## Legal
 
-Own hardware only. See [LEGAL.md](../LEGAL.md).
+Own hardware only. Unauthorised access is illegal almost everywhere. See [LEGAL.md](../LEGAL.md).

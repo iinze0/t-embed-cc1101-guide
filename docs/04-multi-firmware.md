@@ -2,8 +2,6 @@
 
 Flash one launcher. Then install apps into slots from the card. Normal reset returns to the launcher.
 
-**Live site:** https://iinze0.github.io/install.html (web flashers) · https://iinze0.github.io/remote.html (remote control)
-
 ## Launchers
 
 - [bmorcelli Launcher](https://bmorcelli.github.io/Launcher/) — catalog and OTA. Pick LilyGO T-Embed CC1101. WebUI after it boots.
