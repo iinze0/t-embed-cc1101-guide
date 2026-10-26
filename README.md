@@ -5,7 +5,13 @@ Install, multi-boot, buying, antennas, and writing your own app for both LilyGO 
 - **T-Embed CC1101** (CC1101 + PN532, no onboard nRF24)
 - **T-Embed CC1101 Plus** (same board, plus onboard nRF24L01)
 
-Website, once Pages is on (`Settings → Pages → main / docs`): [installer and remote](docs/index.html). Source: [docs/index.html](docs/index.html), [install](docs/install.html), [remote](docs/remote.html).
+**Live site:** https://iinze0.github.io/
+
+- [Install](https://iinze0.github.io/install.html) — web flashers for launcher, Bruce, Willy
+- [Remote](https://iinze0.github.io/remote.html) — screen mirror and control for each firmware
+- [Guide](https://iinze0.github.io/guide.html) — full index of everything
+- [Software extras](https://iinze0.github.io/14-software-extras.html) — themes, packs, collections
+- [Finding features](https://iinze0.github.io/15-finding-features.html) — menu maps
 
 Start here: [everything worth knowing](docs/13-need-to-know.md). Then [do the setup](docs/00-from-this-repo.md). Binaries stay on the project that builds them. This repo will not host attack steps.
 
@@ -15,21 +21,23 @@ Start here: [everything worth knowing](docs/13-need-to-know.md). Then [do the se
 
 | Goal | Do this |
 | --- | --- |
-| Flash from the browser, then drive the wheel from a phone | [Website](docs/index.html) |
+| Flash from the browser, then drive the wheel from a phone | [Live site](https://iinze0.github.io/) |
 | The short version of all of it | [Need to know](docs/13-need-to-know.md) |
 | Whole setup, in order | [From this repo](docs/00-from-this-repo.md) |
 | Write your own app and put it in a slot | [Own firmware](docs/12-own-firmware.md) · [starter](examples/hello) |
 | Every firmware and both multi-boot options | [Firmware index](docs/09-firmware-index.md) |
 | Board, shell, where it is cheapest | [Buy](docs/08-buy.md) |
-| Sub-GHz, Wi-Fi, Bluetooth, and nRF24 whips, each in three sizes | [Antennas](docs/11-antennas.md) |
-| SD card, cable, battery, tags, what to skip | [Extras](docs/10-extras.md) |
+| Sub-GHz, Wi-Fi, Bluetooth, and nRF24 whips | [Antennas](docs/11-antennas.md) |
+| SD card, cable, battery, tags | [Extras](docs/10-extras.md) |
+| Themes, App Store, signal packs | [Software extras](docs/14-software-extras.md) |
+| Where to look in each firmware | [Finding features](docs/15-finding-features.md) |
 | What the menus are, and what is a crime | [Capabilities and limits](docs/07-capabilities-and-limits.md) |
 | One firmware, simplest | [Single firmware](docs/03-single-firmware.md) |
-| Bruce + Flipper port + anything else, switch without a PC | [Multi-firmware](docs/04-multi-firmware.md) |
+| Bruce + Flipper port + anything else | [Multi-firmware](docs/04-multi-firmware.md) |
 | Which board you actually have | [Hardware](docs/01-hardware.md) |
 | SD card, USB disk mode, file layout | [SD card](docs/02-sd-card.md) |
-| Update launcher or a slot without wiping the other | [Updates](docs/05-updates.md) |
-| Black screen, no port, settings vanish, wrong radio | [Troubleshooting](docs/06-troubleshooting.md) |
+| Update launcher or a slot | [Updates](docs/05-updates.md) |
+| Black screen, no port, settings vanish | [Troubleshooting](docs/06-troubleshooting.md) |
 | Penalties | [LEGAL.md](LEGAL.md) |
 
 ## What “multiple firmware” means here
