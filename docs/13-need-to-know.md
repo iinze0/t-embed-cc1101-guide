@@ -2,6 +2,8 @@
 
 Short version of the rest of the repo, in the order you actually hit it.
 
+**Live site:** https://iinze0.github.io/ — [Install](https://iinze0.github.io/install.html) · [Remote](https://iinze0.github.io/remote.html) · [Guide](https://iinze0.github.io/guide.html)
+
 ## The board
 
 Plus is the original plus an nRF24. External antenna (K268-01) if you do not already own one. Internal only if you want it smaller and will not open the shell. A plain T-Embed has no CC1101. Details: [hardware](01-hardware.md). Where to buy: [buy](08-buy.md).
@@ -39,4 +41,4 @@ Black screen: wrong board target, or a raw app written at `0x0`. No port: cable 
 
 ## Legal
 
-Own tags, own remotes, own network. Someone else's fob, badge, car, gate, or Wi-Fi is a crime almost everywhere. Norwegian sections are the worked example in [LEGAL.md](../LEGAL.md).
+Own hardware only. See [LEGAL.md](../LEGAL.md).
