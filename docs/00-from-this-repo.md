@@ -1,14 +1,14 @@
-# Do the whole setup from this repo
+# Full setup order
 
-You do not need a second guide. Firmware binaries stay on the project that builds them (license and size). This page is the order of operations. Shops and antenna bands are worldwide: [buy](08-buy.md).
+Do these once. Firmware binaries stay on the project that builds them. This page is the order of operations.
 
-## 0. Read [LEGAL.md](../LEGAL.md)
+## 0. Rules
 
-If the thing you want to open, copy, or knock off the air is not yours, stop. The rest of this page is install only. The penalty section is written against Norwegian law as a concrete example. The same acts are offences almost everywhere else (CFAA, Computer Misuse Act, and the local equivalent).
+Own hardware only. Unauthorised access is illegal almost everywhere (US, UK, EU, Canada, Australia, Norway, and most other countries). Read [LEGAL.md](../LEGAL.md).
 
 ## 1. Identify the board
 
-[Hardware](01-hardware.md). Plus has the nRF24 fitted. Original does not. Antenna version (internal or SMA) is a separate choice.
+[Hardware](01-hardware.md). Plus has the nRF24 fitted. Original does not. Antenna version (internal or SMA) is a separate choice. [Buy](08-buy.md).
 
 ## 2. Card
 
@@ -20,8 +20,8 @@ Single app, no switching: [single firmware](03-single-firmware.md).
 
 More than one app: [multi-firmware](04-multi-firmware.md). Flash exactly one of these, not both:
 
-- bmorcelli Launcher — https://bmorcelli.github.io/Launcher/
-- loznoc dual-boot — https://loznoc.github.io/dualboot/
+- [bmorcelli Launcher](https://bmorcelli.github.io/Launcher/)
+- [loznoc dual-boot](https://loznoc.github.io/dualboot/)
 
 Browser: desktop Chrome or Edge. Cable: USB-C data. Board charges while plugged in; click the encoder if the screen is dark.
 
@@ -29,16 +29,16 @@ Browser: desktop Chrome or Edge. Cable: USB-C data. Board charges while plugged 
 
 Download the matching asset from the project, copy to the card root, install into a slot from the launcher.
 
-- Bruce — https://github.com/BruceDevices/firmware/releases — asset name contains `lilygo-t-embed-cc1101`. Web flasher: https://bruce.computer/
-- Willy V3 — https://github.com/h-RAT/Willy_Firmware_V3_T-Embed_CC1101 — Plus asset only on a Plus board
+- Bruce — [releases](https://github.com/BruceDevices/firmware/releases) — asset name contains `lilygo-t-embed-cc1101`. Web flasher: https://bruce.computer/
+- Willy V3 — [releases](https://github.com/h-RAT/Willy_Firmware_V3_T-Embed_CC1101) — Plus asset only on a Plus board
 - Flipper-style port — Sor3nt ESP32 port releases, plus that project's sdcard pack unpacked on the card
-- Factory demo, if you need a known-good image — https://github.com/Xinyuan-LilyGO/T-Embed-CC1101
+- Factory demo, if you need a known-good image — [LilyGO](https://github.com/Xinyuan-LilyGO/T-Embed-CC1101)
 
-Suggested slots: 1 Bruce, 2 Flipper port, 3 spare. Name the slot with the version.
+Suggested slots: 1 Bruce, 2 Flipper port, 3 spare. Name the slot with the version. Full list: [firmware index](09-firmware-index.md).
 
 ## 5. First boot of an app
 
-Set Sub-GHz to the band that is legal where you are before any transmit. 868 or 433.92 on the European plan, 915 in the US, Canada, Australia, and New Zealand. The whip has to match. Confirm the encoder works in the launcher before you blame the app.
+Set Sub-GHz to the band that is legal where you are before any transmit. See [frequencies](16-frequencies.md). The whip has to match. Confirm the encoder works in the launcher before you blame the app.
 
 ## 6. Later
 
