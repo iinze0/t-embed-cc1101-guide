@@ -18,7 +18,7 @@ FAT32, 16 or 32 GB, a real brand, bought locally. The slot is SPI. A fast camera
 
 ## Radios and antennas
 
-CC1101 is Sub-GHz, not LoRa. Wi-Fi and Bluetooth share the ESP32 antenna. nRF24 is Plus-only and its own radio. SMA male into the shell's SMA female. RP-SMA does not connect. Band and size picks: [antennas](11-antennas.md).
+CC1101 is Sub-GHz, not LoRa. Wi-Fi and Bluetooth share the ESP32 antenna. nRF24 is Plus-only and its own radio. SMA male into the shell's SMA female. RP-SMA does not connect. Band and size picks: [antennas](11-antennas.md). Regional bands: [frequencies](16-frequencies.md).
 
 Set the band before you transmit. 868 or 433.92 on the European plan, 915 in the US, Canada, Australia, New Zealand.
 
@@ -33,7 +33,7 @@ Reboot returns to the launcher. If it does not, the app was flashed over the lau
 
 ## Your own app
 
-PlatformIO, ESP32-S3, 16 MB, PSRAM, USB CDC on boot. Install `firmware.bin` into a slot. Do not write the factory image at `0x0` unless you mean to erase the launcher. [Own firmware](12-own-firmware.md).
+PlatformIO, ESP32-S3, 16 MB, PSRAM, USB CDC on boot. Install `firmware.bin` into a slot. Do not write the factory image at `0x0` unless you mean to erase the launcher. [Own firmware](12-own-firmware.md). Starter: [examples/hello](../examples/hello).
 
 ## When it breaks
 
